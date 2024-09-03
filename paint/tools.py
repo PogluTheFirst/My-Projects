@@ -38,9 +38,9 @@ class ThicknessSlider(ctk.CTkSlider):
         self.slider_value.set(f"{int(default)}")
 
         self.slider_text = ctk.CTkLabel(parent,
-                                        textvariable=self.slider_value,
-                                        font=('Arial', 12))
-        self.slider_text.grid(row=row, column=3, sticky='nsew', padx=5, pady=5)
+                                        textvariable = self.slider_value,
+                                        font = ('Arial', 12))
+        self.slider_text.grid(row = row, column = 3, sticky = 'nsew', padx = 5, pady = 5)
 
         self.external_func = func
 
