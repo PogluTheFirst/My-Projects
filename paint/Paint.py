@@ -25,3 +25,7 @@ class PaintApp(ctk.CTk):
         self.mainloop()
 if __name__ == "__main__":
     PaintApp()
+
+# when importing
+# from paint import Paint
+# Paint.PaintApp()
