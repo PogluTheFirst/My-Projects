@@ -32,7 +32,7 @@ class Menu(ctk.CTkFrame):
                        func = self.change_tool)
 
         # slider and text
-        self.thickness_slider =ThicknessSlider(self,
+        self.thickness_slider = ThicknessSlider(self,
                         BRUSH_THICKNESS_SLIDER['SLIDER']['row'],
                         BRUSH_THICKNESS_SLIDER['SLIDER']['col'],
                         BRUSH_THICKNESS_SLIDER['SLIDER']['columnspan'],
