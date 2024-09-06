@@ -1,1 +1,1 @@
-Run it in own device as tkinter will have area to display the app doing it in codespaces will result in error
+Run it in own device as tkinter will no have area to display the app doing it in codespaces will result in error
