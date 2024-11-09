@@ -1,5 +1,10 @@
 # Documentation
 
+## Warning
+Insane amount of Spaghetti code coming up
+I only realized it after seeing it now
+I still don't know why i made it like this
+
 ## What is it
 Simple paint app with following tools:
 1. Line drawing tool
