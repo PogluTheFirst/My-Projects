@@ -3,17 +3,21 @@
 ## Warning
 I Know very well that a lot of code here is trash \
 The menu and canvas.py documentations were done by ChatGPT, Because I'm feeling lazy \
+I Get that the ChatGPT generation is very trash but deal with it, I did \
+There may be some errors because there was no heavy bug testing k \
 Anyways the course where i learned tkinter like this is by Clear Code \ 
-Watch it, I'm not asking
+Watch it, I'm not asking \ 
+The only way to run this program is to install the folder it and run the Paint.py file \
+Well Atleast it has better file management, I think \
 
 ## What is it
-Simple paint app with following tools:
+Better than the last paint app with following tools:
 1. Line drawing tool
 2. circle drawing tool
 3. square drawing tool
 4. brush tool
 5. bucket tool
-Multiple default colors and custom color picker and clear button
+Multiple default colors and custom color picker and clear button with file buttons and random image generator
 
 ## Why i made this
 Made this to get more experience with tkinter and to get more used with it
