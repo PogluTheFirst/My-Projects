@@ -9,6 +9,8 @@ Anyways the course where i learned tkinter like this is by Clear Code \
 Watch it, I'm not asking \ 
 The only way to run this program is to install the folder it and run the Paint.py file \
 Well Atleast it has better file management, I think \
+After importing an Image you cannot apply any changes to it but i Don't care, I'm Tired \ 
+Pretty sure it's the same situation with the random image generation \
 
 ## What is it
 Better than the last paint app with following tools:
