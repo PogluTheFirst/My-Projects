@@ -178,6 +178,7 @@ class canvas(Canvas):
     def update_image(self):
         self.canvas_image = ImageTk.PhotoImage(self.image)
         self.create_image(0, 0, image=self.canvas_image, anchor='nw')
+        self.tag_lower(self.canvas_image)
 
     def clear(self):
         self.delete('all')
@@ -222,6 +223,9 @@ class canvas(Canvas):
         self.canvas_image = ImageTk.PhotoImage(self.image)
         self.create_image(0, 0, image=self.canvas_image, anchor='nw')
 
+        self.draw = ImageDraw.Draw(self.image)
+        self.update_image()
+        
     def Export_Image(self):
         #! I Know you can export the image in any other file dimensions but that ain't my problem
         # Open a save file dialog and get the file path
@@ -240,6 +244,15 @@ class canvas(Canvas):
                 pass
 
     def GenerateRandomImage(self):
+        # Get canvas dimensions
+        width, height = self.winfo_width(), self.winfo_height()
+
+        # Create a new PIL image with the canvas size
+        self.image = Image.new('RGB', (width, height), BG_COLOR)
+
+        # Access the pixel map directly for faster manipulation
+        pixels = self.image.load()
+
         palette = [
         "#000000", "#333333", "#555555", "#777777", "#999999", "#BBBBBB", "#DDDDDD", "#FFFFFF", # GrayScale
         "#8B0000", "#B22222", "#FF0000", "#FF6347", "#FF7F7F", "#FFA07A", "#FFB6C1", "#FFC0CB", # Reds 
@@ -251,14 +264,6 @@ class canvas(Canvas):
         "#4B0082", "#6A0DAD", "#800080", "#9370DB", "#8A2BE2", "#BA55D3", "#DA70D6", "#EE82EE"  # Purples
         ]
         
-        # Get canvas dimensions
-        width, height = self.winfo_width(), self.winfo_height()
-
-        # Create a new PIL image with the canvas size
-        self.image = Image.new('RGB', (width, height), BG_COLOR)
-
-        # Access the pixel map directly for faster manipulation
-        pixels = self.image.load()
         
         # Assign random colors to each pixel
         for x in range(width):
@@ -267,4 +272,5 @@ class canvas(Canvas):
                 pixels[x, y] = tuple(int(palette[random.randint(0, 63)][i:i + 2], 16) for i in (1, 3, 5))
 
         # Update the displayed image on the canvas
+        self.draw = ImageDraw.Draw(self.image)
         self.update_image()
