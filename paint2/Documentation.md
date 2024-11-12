@@ -1,16 +1,11 @@
 # Documentation
 
 ## Warning
-I Know very well that a lot of code here is trash \
+I Know very well that a lot of code here is *trash* \
 The menu and canvas.py documentations were done by ChatGPT, Because I'm feeling lazy \
-I Get that the ChatGPT generation is very trash but deal with it, I did \
-There may be some errors because there was no heavy bug testing k \
-Anyways the course where i learned tkinter like this is by Clear Code \ 
-Watch it, I'm not asking \ 
+I Get that the ChatGPT generation is trash sometimes but deal with it, I did \
 The only way to run this program is to install the folder it and run the Paint.py file \
 Well Atleast it has better file management, I think \
-After importing an Image you cannot apply any changes to it but i Don't care, I'm Tired \ 
-Pretty sure it's the same situation with the random image generation \
 
 ## What is it
 Better than the last paint app with following tools:
