@@ -7,7 +7,7 @@ class PaintApp(ctk.CTk):
     def __init__(self):
         # window setup
         super().__init__()
-        self.geometry('1000x800');
+        self.geometry('1100x700');
         self.title('Simple Paint App')
         self.resizable(False, False)
         # self.minsize(1000, 700)
