@@ -192,7 +192,7 @@ class canvas(Canvas):
         self.update_image()
 
     def open_dialog(self):
-        path = filedialog.askopenfile().name
+        path = filedialog.askopenfilename()
         self.Open_Image(path)
 
     def Open_Image(self, path):
